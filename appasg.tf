@@ -22,7 +22,7 @@ resource "aws_launch_template" "flipkart-app-template" {
   name_prefix   = "flipkart-app-template"
   image_id      = "ami-0b982602dbb32c5bd"
   instance_type = "t3.micro"
-  key_name      = "3tierproject"
+  key_name      = "devopsbyvaishnavi"
 
   network_interfaces {
     security_groups             = [aws_security_group.flipkart-ec2-asg-sg-app.id]
