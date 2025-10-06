@@ -9,7 +9,7 @@ resource "aws_db_instance" "flipkart-db" {
   storage_type                = "gp3"
   engine                      = "mysql"
   engine_version              = "8.0.41"
-  instance_class              = "db.m5.large"
+  instance_class              = "db.t3.micro"
   identifier                  = "flipkart-db"
   username                    = "admin"
   password                    = "Devopsbyvaishnavi009*"

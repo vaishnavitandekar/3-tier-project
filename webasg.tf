@@ -14,9 +14,9 @@ resource "aws_autoscaling_group" "flipkart-web-asg" {
 ###### Create a Launch Template for the EC2 instances ######
 resource "aws_launch_template" "flipkart-web-template" {
   name_prefix   = "flipkart-web-template"
-  image_id      = "ami-0f9708d1cd2cfee41"
+  image_id      = "ami-0b982602dbb32c5bd"
   instance_type = "t3.micro"
-  key_name      = "3tierproject"
+  key_name      = "devopsbyvaishnavi"
   network_interfaces {
     associate_public_ip_address = true
     security_groups             = [aws_security_group.flipkart-ec2-asg-sg.id]
